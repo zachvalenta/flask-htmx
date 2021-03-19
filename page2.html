@@ -7,6 +7,19 @@
     <title>page2</title>
 </head>
 <body>
-    page 2
+
+    <div id="swap-me">old content</div>
+
+  <button hx-get="/new-content"
+       hx-trigger="click"
+       hx-target="#swap-me"
+       hx-swap="innerHTML">
+       get new content
+  </button>
+
+    <script src="https://unpkg.com/htmx.org@1.3.1"></script>
+
 </body>
+
+
 </html>

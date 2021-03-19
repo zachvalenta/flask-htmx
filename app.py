@@ -15,6 +15,11 @@ def page2():
     return render_template("page2.html")
 
 
+@app.route("/new-content")
+def new_content():
+    return render_template("new-content.html")
+
+
 @app.route("/hc")
 def hc():
     return "hello from healthcheck"
