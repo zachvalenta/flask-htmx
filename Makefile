@@ -24,7 +24,7 @@ ind:
 	open http://localhost:5002/
 
 fmt:
-	poetry run black app.py; poetry run black app.py
+	poetry run black *.py; poetry run black *.py
 
 venv:
 	poetry env info
